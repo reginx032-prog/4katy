@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>4Kąty — Usługi Remontowo-Wykończeniowe Gdańsk, Gdynia, Sopot</title>
+<meta name="description" content="4Kąty — profesjonalne remonty mieszkań, łazienek i domów w Trójmieście. Solidnie, terminowo, na każdą kieszeń. Bezpłatna wycena. Gdańsk, Gdynia, Sopot." />
+<meta name="keywords" content="remonty Gdańsk, remont mieszkania Trójmiasto, wykończenia pod klucz, remont łazienki Gdynia, ekipa remontowa Sopot, 4Kąty" />
+<meta name="author" content="CZTERY KĄTY SP. Z O.O." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://4katyremonty.pl/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="4Kąty — Remonty bez stresu w Trójmieście" />
+<meta property="og:description" content="Tworzymy wnętrza, w których dobrze się żyje. Solidna ekipa remontowa — Gdańsk, Gdynia, Sopot." />
+<meta property="og:locale" content="pl_PL" />
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CZTERY KĄTY SP. Z O.O.",
+  "alternateName": "4Kąty Usługi Remontowo-Wykończeniowe",
+  "image": "https://4katyremonty.pl/logo.png",
+  "telephone": "+48607281463",
+  "email": "kontakt@4katyremonty.pl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Juliusza Słowackiego 37J",
+    "addressLocality": "Gdańsk",
+    "postalCode": "80-257",
+    "addressCountry": "PL"
+  },
+  "vatID": "PL5833297587",
+  "areaServed": ["Gdańsk", "Gdynia", "Sopot", "Trójmiasto"],
+  "url": "https://4katyremonty.pl",
+  "sameAs": ["https://www.facebook.com/4Katy.Remonty"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --orange: #E8732C;
+  --orange-light: #F4923F;
+  --orange-soft: #FBE3CB;
+  --navy: #1C2B4A;
+  --navy-deep: #142039;
+  --navy-soft: #2E4271;
+  --ecru: #F8F4ED;
+  --ecru-deep: #F0E9DB;
+  --latte: #C9B89A;
+  --beige: #EDE2D0;
+  --gray-1: #6B6B6B;
+  --gray-2: #9A9A9A;
+  --gray-3: #E5E1D9;
+  --white: #FFFFFF;
+  --shadow-sm: 0 4px 14px rgba(28, 43, 74, 0.06);
+  --shadow-md: 0 12px 40px rgba(28, 43, 74, 0.10);
+  --shadow-lg: 0 25px 70px rgba(28, 43, 74, 0.14);
+  --radius: 18px;
+  --radius-lg: 28px;
+  --transition: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--navy);
+  background: var(--ecru);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; line-height: 1.18; letter-spacing: -0.01em; color: var(--navy-deep); }
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- NAVIGATION ---------- */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 18px 0;
+  background: rgba(248, 244, 237, 0.85);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: all .35s var(--transition);
+}
+.nav.scrolled { padding: 12px 0; border-bottom-color: rgba(28,43,74,0.08); box-shadow: var(--shadow-sm); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 18px; color: var(--navy-deep); }
+.brand-mark { width: 38px; height: 38px; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand-text small { font-family: 'Plus Jakarta Sans'; font-size: 10px; font-weight: 500; color: var(--gray-1); letter-spacing: 0.14em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { font-size: 15px; font-weight: 500; color: var(--navy); position: relative; transition: color .25s; }
+.nav-links a::after { content: ''; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px; background: var(--orange); transition: width .35s var(--transition); }
+.nav-links a:hover { color: var(--orange); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  background: var(--navy-deep); color: var(--white) !important;
+  padding: 11px 22px; border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  transition: all .35s var(--transition);
+}
+.nav-cta::after { display: none; }
+.nav-cta:hover { background: var(--orange); transform: translateY(-2px); }
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span { display: block; width: 26px; height: 2px; background: var(--navy); margin: 6px 0; transition: .35s; border-radius: 2px; }
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  padding: 160px 0 100px;
+  overflow: hidden;
+  background:
+    radial-gradient(1100px 600px at 90% -10%, rgba(232,115,44,0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, rgba(28,43,74,0.07), transparent 60%),
+    var(--ecru);
+}
+.hero-decor {
+  position: absolute; top: 0; right: -10%; width: 700px; height: 700px;
+  background: radial-gradient(circle at center, rgba(244,146,63,0.18), transparent 65%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 70px; align-items: center; }
+
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 8px 16px; border-radius: 999px;
+  background: rgba(232,115,44,0.10);
+  color: var(--orange);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+  margin-bottom: 26px;
+  animation: fadeUp .9s var(--transition) both;
+}
+.hero-eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(232,115,44,.5); } 50% { box-shadow: 0 0 0 8px rgba(232,115,44,0); } }
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  margin-bottom: 22px;
+  animation: fadeUp 1s .1s var(--transition) both;
+}
+.hero h1 .accent { color: var(--orange); font-style: italic; font-weight: 500; }
+
+.rotator {
+  height: 38px; overflow: hidden; position: relative;
+  font-size: 18px; color: var(--navy-soft); font-weight: 500;
+  margin-bottom: 18px;
+  animation: fadeUp 1s .2s var(--transition) both;
+}
+.rotator-track { position: absolute; inset: 0; }
+.rotator-item {
+  position: absolute; inset: 0; display: flex; align-items: center;
+  opacity: 0; transform: translateY(100%);
+  transition: all .7s var(--transition);
+}
+.rotator-item.active { opacity: 1; transform: translateY(0); }
+.rotator-item.exit { opacity: 0; transform: translateY(-100%); }
+
+.hero-sub {
+  font-size: 17px; color: var(--gray-1); max-width: 540px; margin-bottom: 36px;
+  animation: fadeUp 1s .3s var(--transition) both;
+}
+
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; animation: fadeUp 1s .4s var(--transition) both; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 28px; border-radius: 999px;
+  font-weight: 600; font-size: 15px;
+  cursor: pointer; border: none;
+  transition: all .35s var(--transition);
+  position: relative; overflow: hidden;
+}
+.btn-primary { background: var(--orange); color: var(--white); box-shadow: 0 12px 30px rgba(232,115,44,0.35); }
+.btn-primary:hover { transform: translateY(-3px); background: var(--orange-light); box-shadow: 0 18px 40px rgba(232,115,44,0.45); }
+.btn-secondary { background: var(--navy-deep); color: var(--white); }
+.btn-secondary:hover { transform: translateY(-3px); background: var(--navy-soft); }
+.btn-ghost { background: transparent; color: var(--navy-deep); border: 1.5px solid rgba(28,43,74,0.18); }
+.btn-ghost:hover { background: var(--navy-deep); color: var(--white); border-color: var(--navy-deep); transform: translateY(-3px); }
+.btn svg { width: 18px; height: 18px; }
+
+.hero-stats { display: flex; gap: 36px; margin-top: 50px; animation: fadeUp 1s .5s var(--transition) both; }
+.hero-stat strong { font-family: 'Fraunces'; font-size: 32px; color: var(--navy-deep); display: block; line-height: 1; }
+.hero-stat span { font-size: 13px; color: var(--gray-1); margin-top: 6px; display: block; }
+
+/* Hero image side */
+.hero-visual { position: relative; }
+.hero-image-wrap {
+  position: relative; border-radius: var(--radius-lg);
+  overflow: hidden; box-shadow: var(--shadow-lg);
+  aspect-ratio: 4/5;
+  animation: fadeIn 1.2s .3s var(--transition) both;
+}
+.hero-image-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 8s ease; }
+.hero-image-wrap:hover img { transform: scale(1.06); }
+
+.floating-card {
+  position: absolute;
+  background: var(--white);
+  border-radius: 18px;
+  padding: 18px 22px;
+  box-shadow: var(--shadow-md);
+  display: flex; align-items: center; gap: 14px;
+  animation: float 6s ease-in-out infinite;
+}
+.floating-card.card-1 { top: 8%; left: -8%; animation-delay: 0s; }
+.floating-card.card-2 { bottom: 12%; right: -6%; animation-delay: 1.5s; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+.floating-card .icon-circle {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--orange-soft); display: grid; place-items: center;
+  color: var(--orange);
+}
+.floating-card.card-2 .icon-circle { background: rgba(28,43,74,0.10); color: var(--navy-deep); }
+.floating-card .text-block strong { display: block; font-size: 14px; color: var(--navy-deep); }
+.floating-card .text-block span { font-size: 12px; color: var(--gray-1); }
+
+/* ---------- ANIMATED LOGO HOUSE ---------- */
+.logo-animation {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px; height: 140px;
+  pointer-events: none; z-index: 2;
+  filter: drop-shadow(0 10px 30px rgba(28,43,74,0.20));
+}
+.logo-animation svg path,
+.logo-animation svg polyline,
+.logo-animation svg line { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.logo-animation .draw {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: draw 2.4s 0.4s var(--transition) forwards;
+}
+.logo-animation .glow {
+  opacity: 0;
+  animation: glowIn 1.2s 2.4s var(--transition) forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes glowIn { to { opacity: 1; } }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- SECTIONS ---------- */
+section { padding: 110px 0; position: relative; }
+
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 70px; }
+.section-eyebrow {
+  display: inline-block; font-size: 13px; font-weight: 700; color: var(--orange);
+  letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px;
+}
+.section-head h2 { font-size: clamp(32px, 4vw, 48px); margin-bottom: 16px; }
+.section-head p { color: var(--gray-1); font-size: 17px; }
+
+/* ---------- ABOUT ---------- */
+.about { background: var(--white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 70px; align-items: center; }
+.about-image { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 5/6; position: relative; }
+.about-image img { width: 100%; height: 100%; object-fit: cover; }
+.about-badge {
+  position: absolute; bottom: 24px; left: 24px;
+  background: var(--white); padding: 18px 22px; border-radius: 16px;
+  display: flex; align-items: center; gap: 14px; box-shadow: var(--shadow-md);
+}
+.about-badge .num { font-family: 'Fraunces'; font-size: 38px; color: var(--orange); line-height: 1; }
+.about-badge .lbl { font-size: 13px; color: var(--gray-1); line-height: 1.3; }
+
+.about-text h2 { font-size: clamp(32px, 4vw, 46px); margin-bottom: 22px; }
+.about-text p { color: var(--gray-1); margin-bottom: 18px; font-size: 16px; }
+.about-points { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+.about-points li {
+  list-style: none; display: flex; align-items: center; gap: 12px;
+  font-weight: 500; color: var(--navy-deep); font-size: 15px;
+}
+.about-points li::before {
+  content: ''; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--orange-soft);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8732C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'></polyline></svg>");
+  background-size: 14px; background-position: center; background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+/* ---------- WHY US ---------- */
+.why { background: var(--ecru); }
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+.why-card {
+  background: var(--white); padding: 32px 26px; border-radius: var(--radius);
+  border: 1px solid rgba(28,43,74,0.05);
+  transition: all .4s var(--transition);
+  position: relative; overflow: hidden;
+}
+.why-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+  background: var(--orange); transform: scaleX(0); transform-origin: left;
+  transition: transform .5s var(--transition);
+}
+.why-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+.why-card:hover::before { transform: scaleX(1); }
+.why-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--orange-soft), #FCEEDC);
+  color: var(--orange);
+  display: grid; place-items: center; margin-bottom: 20px;
+  transition: all .4s var(--transition);
+}
+.why-card:hover .why-icon { background: var(--orange); color: var(--white); transform: rotate(-6deg) scale(1.05); }
+.why-icon svg { width: 26px; height: 26px; }
+.why-card h3 { font-size: 18px; margin-bottom: 8px; font-family: 'Plus Jakarta Sans'; font-weight: 700; }
+.why-card p { font-size: 14px; color: var(--gray-1); line-height: 1.55; }
+
+/* ---------- SERVICES ---------- */
+.services { background: var(--white); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.service-card {
+  background: var(--ecru); padding: 38px 30px; border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: all .4s var(--transition);
+  position: relative; overflow: hidden;
+}
+.service-card .num {
+  position: absolute; top: 22px; right: 26px;
+  font-family: 'Fraunces'; font-size: 60px; line-height: 1;
+  color: var(--ecru-deep); transition: color .4s;
+  font-weight: 600;
+}
+.service-card:hover {
+  background: var(--navy-deep); transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.service-card:hover .num { color: rgba(255,255,255,0.10); }
+.service-card:hover h3, .service-card:hover p { color: var(--white); }
+.service-card:hover .service-icon { background: var(--orange); color: var(--white); }
+.service-icon {
+  width: 60px; height: 60px; border-radius: 16px;
+  background: var(--white); color: var(--orange);
+  display: grid; place-items: center; margin-bottom: 22px;
+  box-shadow: var(--shadow-sm);
+  transition: all .4s var(--transition);
+}
+.service-icon svg { width: 28px; height: 28px; }
+.service-card h3 { font-size: 20px; margin-bottom: 10px; font-family: 'Plus Jakarta Sans'; font-weight: 700; transition: color .4s; }
+.service-card p { font-size: 14px; color: var(--gray-1); transition: color .4s; }
+
+/* ---------- EMOTIONAL ---------- */
+.emotional {
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy-soft));
+  color: var(--white);
+  position: relative; overflow: hidden;
+}
+.emotional::before {
+  content: ''; position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,115,44,0.18), transparent 70%);
+}
+.emotional-inner { max-width: 880px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+.emotional h2 { color: var(--white); font-size: clamp(32px, 4.5vw, 52px); margin-bottom: 28px; }
+.emotional p { color: rgba(255,255,255,0.82); font-size: 18px; margin-bottom: 20px; }
+
+/* ---------- GALLERY ---------- */
+.gallery { background: var(--ecru); }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 18px;
+}
+.gallery-item {
+  position: relative; overflow: hidden; border-radius: var(--radius);
+  cursor: pointer; box-shadow: var(--shadow-sm);
+  transition: all .4s var(--transition);
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--transition); }
+.gallery-item:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.gallery-item:hover img { transform: scale(1.08); }
+.gallery-item::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(20,32,57,0.75), transparent 55%);
+  opacity: 0; transition: opacity .4s;
+}
+.gallery-item:hover::after { opacity: 1; }
+.gallery-item .label {
+  position: absolute; bottom: 18px; left: 20px; right: 20px;
+  color: var(--white); font-weight: 600; z-index: 2;
+  transform: translateY(10px); opacity: 0; transition: all .4s;
+}
+.gallery-item:hover .label { transform: translateY(0); opacity: 1; }
+.gallery-item.large { grid-column: span 2; grid-row: span 2; }
+.gallery-item.tall { grid-row: span 2; }
+.gallery-item.wide { grid-column: span 2; }
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials { background: var(--white); }
+.test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.test-card {
+  background: var(--ecru); padding: 32px 28px; border-radius: var(--radius);
+  position: relative; transition: all .4s var(--transition);
+  border: 1px solid transparent;
+}
+.test-card:hover { transform: translateY(-6px); border-color: rgba(232,115,44,0.18); box-shadow: var(--shadow-md); background: var(--white); }
+.stars { color: var(--orange); font-size: 16px; letter-spacing: 2px; margin-bottom: 14px; }
+.test-card p { font-size: 15px; color: var(--navy); margin-bottom: 22px; line-height: 1.65; }
+.test-author { display: flex; align-items: center; gap: 12px; }
+.test-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--navy-deep); color: var(--white);
+  display: grid; place-items: center; font-weight: 700; font-family: 'Fraunces';
+}
+.test-author strong { display: block; font-size: 14px; color: var(--navy-deep); }
+.test-author span { font-size: 13px; color: var(--gray-1); }
+
+/* ---------- CONTACT ---------- */
+.contact { background: var(--ecru); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: start; }
+
+.contact-info h2 { font-size: clamp(30px, 3.6vw, 42px); margin-bottom: 18px; }
+.contact-info > p { color: var(--gray-1); margin-bottom: 32px; font-size: 16px; }
+
+.contact-list { list-style: none; }
+.contact-list li {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px 0; border-bottom: 1px solid rgba(28,43,74,0.08);
+}
+.contact-list li:last-child { border-bottom: none; }
+.contact-list .ci-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--white); color: var(--orange);
+  display: grid; place-items: center; flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+.contact-list .ci-icon svg { width: 20px; height: 20px; }
+.contact-list strong { display: block; font-size: 13px; color: var(--gray-1); font-weight: 500; margin-bottom: 2px; }
+.contact-list a, .contact-list span.line { font-size: 16px; color: var(--navy-deep); font-weight: 600; transition: color .25s; }
+.contact-list a:hover { color: var(--orange); }
+
+.form-wrap {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  box-shadow: var(--shadow-md);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-group { margin-bottom: 18px; position: relative; }
+.form-group label {
+  display: block; font-size: 13px; font-weight: 600;
+  color: var(--navy-deep); margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 14px 16px;
+  border: 1.5px solid var(--gray-3);
+  border-radius: 12px;
+  font-family: inherit; font-size: 15px;
+  background: var(--white);
+  transition: all .25s;
+  color: var(--navy-deep);
+}
+.form-group textarea { min-height: 130px; resize: vertical; }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none; border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(232,115,44,0.12);
+}
+.form-wrap .btn { width: 100%; justify-content: center; margin-top: 8px; }
+.form-success {
+  background: var(--orange-soft); color: var(--orange);
+  padding: 14px 18px; border-radius: 12px; margin-top: 18px;
+  font-weight: 600; font-size: 14px; text-align: center; display: none;
+}
+.form-success.show { display: block; animation: fadeUp .5s var(--transition); }
+
+/* ---------- FOOTER ---------- */
+footer { background: var(--navy-deep); color: rgba(255,255,255,0.75); padding: 70px 0 30px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 50px; }
+.footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; color: var(--white); font-size: 18px; font-weight: 700; }
+.footer-col p, .footer-col a { font-size: 14px; color: rgba(255,255,255,0.65); }
+.footer-col h4 { color: var(--white); font-family: 'Plus Jakarta Sans'; font-size: 15px; font-weight: 700; margin-bottom: 18px; letter-spacing: 0.04em; text-transform: uppercase; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul a { transition: color .25s; }
+.footer-col ul a:hover { color: var(--orange); }
+.social-row { display: flex; gap: 10px; margin-top: 18px; }
+.social-row a {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255,255,255,0.08); display: grid; place-items: center;
+  transition: all .3s; color: var(--white);
+}
+.social-row a:hover { background: var(--orange); transform: translateY(-3px); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding-top: 24px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  font-size: 13px; color: rgba(255,255,255,0.50);
+}
+
+/* ---------- REVEAL ---------- */
+.reveal { opacity: 0; transform: translateY(40px); transition: all .9s var(--transition); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ---------- FLOATING PHONE ---------- */
+.float-phone {
+  position: fixed; bottom: 28px; right: 28px; z-index: 90;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--orange); color: var(--white);
+  display: grid; place-items: center;
+  box-shadow: 0 14px 30px rgba(232,115,44,0.45);
+  animation: pulseRing 2s infinite;
+  transition: all .3s;
+}
+.float-phone:hover { transform: scale(1.08); background: var(--orange-light); }
+.float-phone svg { width: 26px; height: 26px; }
+@keyframes pulseRing {
+  0% { box-shadow: 0 14px 30px rgba(232,115,44,0.45), 0 0 0 0 rgba(232,115,44,0.5); }
+  70% { box-shadow: 0 14px 30px rgba(232,115,44,0.45), 0 0 0 18px rgba(232,115,44,0); }
+  100% { box-shadow: 0 14px 30px rgba(232,115,44,0.45), 0 0 0 0 rgba(232,115,44,0); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  section { padding: 80px 0; }
+  .hero { padding: 130px 0 80px; }
+  .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; padding: 24px; background: var(--white);
+    box-shadow: var(--shadow-md); gap: 18px; align-items: stretch; }
+  .nav-links.open { display: flex; }
+  .menu-toggle { display: block; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+  .gallery-item.large { grid-column: span 2; grid-row: span 2; }
+  .gallery-item.tall, .gallery-item.wide { grid-column: span 1; grid-row: span 1; }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .form-wrap { padding: 30px 24px; }
+  .hero-stats { gap: 24px; }
+  .floating-card { padding: 12px 14px; }
+  .floating-card.card-1 { left: -4%; }
+  .floating-card.card-2 { right: -4%; }
+  .about-points { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- =============== NAVIGATION =============== -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand" aria-label="4Kąty">
+      <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 30 L32 10 L56 30" stroke="#E8732C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 28 V52 H50 V28" stroke="#1C2B4A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27 52 V38 H37 V52" stroke="#E8732C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">
+        4Kąty
+        <small>Remonty &amp; Wykończenia</small>
+      </span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#o-firmie">O firmie</a>
+      <a href="#dlaczego">Dlaczego my</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt" class="nav-cta">Bezpłatna wycena</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- =============== HERO =============== -->
+<header class="hero" id="top">
+  <div class="hero-decor"></div>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="hero-eyebrow"><span class="dot"></span>Remonty na każdą kieszeń · Trójmiasto</span>
+      <h1>Tworzymy <span class="accent">wnętrza,</span><br />w&nbsp;których dobrze się żyje</h1>
+      <div class="rotator" aria-live="polite">
+        <div class="rotator-track" id="rotator">
+          <div class="rotator-item active">Twój remont bez stresu i bez przypadkowych ekip</div>
+          <div class="rotator-item">Od starych mieszkań po nowoczesne apartamenty — robimy to dobrze</div>
+          <div class="rotator-item">Solidny remont nie musi kosztować fortuny</div>
+          <div class="rotator-item">Remont dopasowany do Twoich oczekiwań i budżetu</div>
+          <div class="rotator-item">Mieszkanie, do którego będziesz wracać z przyjemnością</div>
+          <div class="rotator-item">Pomagamy stworzyć Twoje idealne 4 kąty</div>
+          <div class="rotator-item">Dokładnie. Terminowo. Po ludzku.</div>
+          <div class="rotator-item">Jedna ekipa. Jeden kontakt. Jeden porządny efekt.</div>
+        </div>
+      </div>
+      <p class="hero-sub">Planujesz remont mieszkania, łazienki lub całego domu? Doradzimy, zaplanujemy i wykonamy wszystko od A do Z — solidnie, terminowo i bez zbędnego stresu.</p>
+      <div class="hero-ctas">
+        <a href="#kontakt" class="btn btn-primary">
+          Bezpłatna wycena
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="tel:+48607281463" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Zadzwoń teraz
+        </a>
+        <a href="#realizacje" class="btn btn-ghost">Zobacz realizacje</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>100%</strong><span>Satysfakcji klientów</span></div>
+        <div class="hero-stat"><strong>1</strong><span>Sprawdzona ekipa</span></div>
+        <div class="hero-stat"><strong>A&ndash;Z</strong><span>Kompleksowo</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-wrap">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" alt="Nowoczesne, eleganckie wnętrze mieszkania po remoncie 4Kąty" loading="eager" />
+        <div class="logo-animation" aria-hidden="true">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Roof -->
+            <path class="draw" d="M12 50 L50 18 L88 50" stroke="#E8732C" />
+            <!-- House body -->
+            <path class="draw" style="animation-delay: 0.7s" d="M22 47 V82 H78 V47" stroke="#1C2B4A" />
+            <!-- Door -->
+            <path class="draw" style="animation-delay: 1.3s" d="M44 82 V62 H56 V82" stroke="#E8732C" />
+            <!-- Glow circle -->
+            <circle class="glow" cx="50" cy="50" r="48" fill="none" stroke="#E8732C" stroke-width="0.5" stroke-dasharray="2 4" opacity="0.4" />
+          </svg>
+        </div>
+      </div>
+      <div class="floating-card card-1">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="text-block"><strong>Bez stresu</strong><span>Jedna ekipa od A do Z</span></div>
+      </div>
+      <div class="floating-card card-2">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="text-block"><strong>Terminowo</strong><span>Bez ślizgania się z czasem</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =============== ABOUT =============== -->
+<section class="about" id="o-firmie">
+  <div class="container about-grid">
+    <div class="about-image reveal">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1100&q=80" alt="Komfortowe wnętrze po kompleksowym remoncie 4Kąty" loading="lazy" />
+      <div class="about-badge">
+        <div class="num">A&ndash;Z</div>
+        <div class="lbl">Kompleksowa<br/>realizacja remontu</div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <span class="section-eyebrow">O firmie 4Kąty</span>
+      <h2>Remonty na każdą kieszeń</h2>
+      <p>Firma 4Kąty pomaga klientom tworzyć wygodne, nowoczesne i funkcjonalne wnętrza. Niezależnie od tego, czy potrzebujesz generalnego remontu mieszkania, nowej łazienki czy odświeżenia wnętrza — możesz liczyć na kompleksową pomoc i fachowe wykonanie.</p>
+      <p>Doradzamy najlepsze rozwiązania, pomagamy dobrać materiały i dbamy o każdy etap realizacji. Naszym celem jest stworzenie miejsca, w którym po prostu <strong>dobrze się mieszka</strong>.</p>
+      <ul class="about-points">
+        <li>Stare mieszkania w bloku</li>
+        <li>Mieszkania z rynku wtórnego</li>
+        <li>Wykończenia od dewelopera</li>
+        <li>Remont łazienki</li>
+        <li>Generalny remont domu</li>
+        <li>Odświeżenie wnętrza</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============== WHY US =============== -->
+<section class="why" id="dlaczego">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Dlaczego my</span>
+      <h2>Powody, dla których nam zaufasz</h2>
+      <p>Nieważne jaki masz budżet — możesz mieć dobrze wykonane wnętrze. Oto, co dostajesz, wybierając 4Kąty.</p>
+    </div>
+    <div class="why-grid">
+      <!-- 10 cards -->
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Remont na Twój budżet</h3>
+        <p>Wycena dopasowana do Twoich możliwości — bez ukrytych kosztów.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Fachowe doradztwo</h3>
+        <p>Pomożemy dobrać rozwiązania, materiały i kolejność prac.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Kompleksowa realizacja</h3>
+        <p>Cały remont z jednej ręki — od koncepcji po posprzątane wnętrze.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Terminowość</h3>
+        <p>Trzymamy się ustalonych terminów — szanujemy Twój czas.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Dokładność wykonania</h3>
+        <p>Każdy detal ma znaczenie — równe ściany, czyste fugi, idealne kąty.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Nowoczesne rozwiązania</h3>
+        <p>Aktualne trendy, sprawdzone technologie i estetyka premium.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Wsparcie na każdym etapie</h3>
+        <p>Jesteśmy w kontakcie od pierwszego pomysłu po ostatnią płytkę.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Jedna ekipa</h3>
+        <p>Jeden kontakt, jedna odpowiedzialność, jeden porządny efekt.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div>
+        <h3>Przejrzyste ustalenia</h3>
+        <p>Konkretna wycena, jasny zakres prac i harmonogram.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+        <h3>Doświadczenie</h3>
+        <p>Lata praktyki w mieszkaniach, łazienkach i domach Trójmiasta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== SERVICES =============== -->
+<section class="services" id="uslugi">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Nasze usługi</span>
+      <h2>Co dla Ciebie zrobimy</h2>
+      <p>Od odświeżenia mieszkania po generalny remont całego domu — wszystko w jednych rękach.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="num">01</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Kompleksowe remonty mieszkań</h3>
+        <p>Generalne remonty mieszkań od stanu surowego aż po gotowe wnętrza.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">02</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a2.12 2.12 0 0 0-3 3L6 9"/><path d="M14 6l3 3"/><path d="M2 22l5.5-5.5"/><path d="M2 22l5.5-5.5"/><path d="M16 8l6 6-6 6-6-6 6-6z"/></svg></div>
+        <h3>Remonty łazienek</h3>
+        <p>Nowoczesne łazienki wykonywane od podstaw — od projektu po efekt premium.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">03</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Wykończenia pod klucz</h3>
+        <p>Kompleksowe przygotowanie mieszkania do zamieszkania — gotowe na wnoszenie mebli.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">04</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <h3>Układanie płytek</h3>
+        <p>Glazura, gres oraz duże formaty — równo, czysto i z dbałością o detal.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">05</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11h-1V8a3 3 0 0 0-6 0v3h-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/><line x1="15" y1="3" x2="15" y2="11"/></svg></div>
+        <h3>Malowanie i gładzie</h3>
+        <p>Szpachlowanie, wygładzanie ścian i malowanie — perfekcyjne wykończenie.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">06</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Instalacje elektryczne i hydrauliczne</h3>
+        <p>Nowe instalacje oraz modernizacje — bezpiecznie i zgodnie ze sztuką.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">07</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+        <h3>Zabudowy karton-gips</h3>
+        <p>Sufity podwieszane, ścianki działowe i designerskie zabudowy LED.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="num">08</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg></div>
+        <h3>Montaż podłóg i drzwi</h3>
+        <p>Panele, podłogi oraz profesjonalny montaż drzwi wewnętrznych.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== EMOTIONAL =============== -->
+<section class="emotional">
+  <div class="container emotional-inner reveal">
+    <span class="section-eyebrow" style="color: var(--orange);">Coś więcej niż remont</span>
+    <h2>Remont to coś więcej niż tylko ściany i płytki</h2>
+    <p>Dla naszych klientów remont oznacza nowy etap, większy komfort i miejsce, do którego chce się wracać każdego dnia.</p>
+    <p>Dlatego stawiamy nie tylko na jakość wykonania, ale też na normalną, uczciwą współpracę i pełne zaangażowanie w każdy projekt.</p>
+    <p style="margin-top: 28px; color: var(--white); font-weight: 500;">Niezależnie od tego, czy odnawiasz stare mieszkanie, wykańczasz nowe 4 kąty czy robisz generalny remont — jesteśmy po to, żeby zrobić to porządnie.</p>
+    <a href="#kontakt" class="btn btn-primary" style="margin-top: 36px;">
+      Porozmawiajmy o Twoim remoncie
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- =============== GALLERY =============== -->
+<section class="gallery" id="realizacje">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Nasze realizacje</span>
+      <h2>Wnętrza, które już cieszą właścicieli</h2>
+      <p>Mieszkania, łazienki i domy zrealizowane przez 4Kąty — od koncepcji po finalny efekt.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item large reveal">
+        <img src="495605520_1281468297312114_2225739970376912145_n.jpg" alt="Luksusowa łazienka master z marmurem i podwójną umywalką" loading="lazy" />
+        <div class="label">Łazienka master · marmur premium</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="481203177_1218734813585463_2836575682231007200_n.jpg" alt="Nowoczesna łazienka w beżach z podświetlanym lustrem" loading="lazy" />
+        <div class="label">Łazienka · ciepłe beże</div>
+      </div>
+      <div class="gallery-item tall reveal">
+        <img src="481668767_1218620406930237_383363676619988247_n.jpg" alt="Łazienka z drewnianymi płytkami i ukrytą pralką" loading="lazy" />
+        <div class="label">Łazienka z pralnią</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="470602228_1157911329667812_1850621239749121896_n.jpg" alt="Kuchnia z fartuchem mozaikowym i podświetleniem LED" loading="lazy" />
+        <div class="label">Kuchnia · designerska mozaika</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="470206989_1153949486730663_5155572531006538041_n.jpg" alt="Jasna łazienka z prysznicem walk-in i okrągłym lustrem" loading="lazy" />
+        <div class="label">Łazienka · prysznic walk-in</div>
+      </div>
+      <div class="gallery-item wide reveal">
+        <img src="495673396_1281467957312148_8581542738378070841_n.jpg" alt="Panoramiczne ujęcie łazienki master z dwiema umywalkami i wanną" loading="lazy" />
+        <div class="label">Łazienka master · panorama</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="481248811_1219032010222410_8936242321422435106_n.jpg" alt="Łazienka biało-drewniana z czarną armaturą" loading="lazy" />
+        <div class="label">Drewno &amp; czerń</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="494308468_1274933721298905_5385672324566129823_n.jpg" alt="Przytulna sypialnia w ciepłych barwach" loading="lazy" />
+        <div class="label">Sypialnia · ciepłe wnętrze</div>
+      </div>
+      <div class="gallery-item wide reveal">
+        <img src="496659855_1281468197312124_4701888864938723303_n.jpg" alt="Łazienka z podwójną umywalką i okrągłymi lustrami w drewnianych ramach" loading="lazy" />
+        <div class="label">Łazienka · podwójna umywalka</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="482216821_1219031646889113_855994239738519971_n.jpg" alt="Minimalistyczna łazienka z miską wiszącą i drewnianym blatem" loading="lazy" />
+        <div class="label">Łazienka · minimalist</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== TESTIMONIALS =============== -->
+<section class="testimonials" id="opinie">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Opinie klientów</span>
+      <h2>Co mówią ludzie, którym remontowaliśmy 4 kąty</h2>
+      <p>Najlepszą rekomendacją jest zadowolony klient — i tych mamy najwięcej.</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Bardzo dobra współpraca i konkretny kontakt od początku remontu. Wszystko wykonane dokładnie i zgodnie z ustaleniami. Mieszkanie wygląda świetnie.”</p>
+        <div class="test-author"><div class="test-avatar">M</div><div><strong>Michał</strong><span>Gdańsk</span></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Łazienka wyszła naprawdę pięknie. Pomogli nam też dobrać kilka rozwiązań, na które sami byśmy nie wpadli.”</p>
+        <div class="test-author"><div class="test-avatar">K</div><div><strong>Karolina</strong><span>Gdynia</span></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Remont całego mieszkania przebiegł sprawnie i bez większego stresu. Dobra organizacja pracy i uczciwe podejście.”</p>
+        <div class="test-author"><div class="test-avatar">T</div><div><strong>Tomasz</strong><span>Sopot</span></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Wszystkie prace wykonane estetycznie i dokładnie. Duży plus za kontakt i terminowość.”</p>
+        <div class="test-author"><div class="test-avatar">J</div><div><strong>Joanna</strong><span>Gdańsk</span></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Płytki położone bardzo dokładnie, wszystko równo i czysto. Widać doświadczenie.”</p>
+        <div class="test-author"><div class="test-avatar">P</div><div><strong>Paweł</strong><span>Gdynia</span></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Bardzo fajna współpraca od początku do końca. Wszystko można było spokojnie ustalić.”</p>
+        <div class="test-author"><div class="test-avatar">M</div><div><strong>Monika</strong><span>Sopot</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== CONTACT =============== -->
+<section class="contact" id="kontakt">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <span class="section-eyebrow">Kontakt</span>
+      <h2>Umów bezpłatną wycenę</h2>
+      <p>Opisz krótko swoje potrzeby — oddzwonimy lub odpiszemy w ciągu 24 godzin. Bez zobowiązań.</p>
+      <ul class="contact-list">
+        <li>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><strong>Telefon</strong><a href="tel:+48607281463">607-281-463</a></div>
+        </li>
+        <li>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><strong>E-mail</strong><a href="mailto:kontakt@4katyremonty.pl">kontakt@4katyremonty.pl</a></div>
+        </li>
+        <li>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong>Adres</strong><span class="line">ul. Juliusza Słowackiego 37J<br/>80-257 Gdańsk</span></div>
+        </li>
+        <li>
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div><strong>Obsługa</strong><span class="line">Gdańsk · Gdynia · Sopot · Trójmiasto</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form-wrap reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" required placeholder="Jan Kowalski" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Numer telefonu</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+48 600 000 000" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Adres e-mail</label>
+          <input type="email" id="email" name="email" required placeholder="ty@example.pl" />
+        </div>
+        <div class="form-group">
+          <label for="city">Miasto realizacji</label>
+          <input type="text" id="city" name="city" placeholder="np. Gdańsk" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="scope">Zakres prac</label>
+        <select id="scope" name="scope" required>
+          <option value="">— wybierz —</option>
+          <option>Remont łazienki</option>
+          <option>Remont mieszkania</option>
+          <option>Wykończenie pod klucz</option>
+          <option>Malowanie i gładzie</option>
+          <option>Płytki i podłogi</option>
+          <option>Instalacje</option>
+          <option>Prośba o wycenę</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="msg">Krótka wiadomość</label>
+        <textarea id="msg" name="message" placeholder="Opisz krótko, co chciałbyś zrobić, metraż, oczekiwania…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Wyślij zapytanie
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+      <div class="form-success" id="formSuccess">✓ Dziękujemy! Wkrótce się odezwiemy.</div>
+    </form>
+  </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <svg width="34" height="34" viewBox="0 0 64 64" fill="none">
+            <path d="M8 30 L32 10 L56 30" stroke="#E8732C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 28 V52 H50 V28" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27 52 V38 H37 V52" stroke="#E8732C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          4Kąty
+        </div>
+        <p>CZTERY KĄTY SP. Z O.O.<br/>Usługi remontowo-wykończeniowe w&nbsp;Trójmieście. Solidnie, terminowo, na każdą kieszeń.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/4Katy.Remonty" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="tel:+48607281463" aria-label="Telefon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <a href="mailto:kontakt@4katyremonty.pl" aria-label="E-mail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Firma</h4>
+        <ul>
+          <li><a href="#o-firmie">O firmie</a></li>
+          <li><a href="#dlaczego">Dlaczego my</a></li>
+          <li><a href="#realizacje">Realizacje</a></li>
+          <li><a href="#opinie">Opinie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Usługi</h4>
+        <ul>
+          <li><a href="#uslugi">Remonty mieszkań</a></li>
+          <li><a href="#uslugi">Remonty łazienek</a></li>
+          <li><a href="#uslugi">Wykończenia pod klucz</a></li>
+          <li><a href="#uslugi">Malowanie &amp; gładzie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+48607281463">607-281-463</a></li>
+          <li><a href="mailto:kontakt@4katyremonty.pl">kontakt@4katyremonty.pl</a></li>
+          <li>ul. J. Słowackiego 37J<br/>80-257 Gdańsk</li>
+          <li>NIP: 5833297587</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CZTERY KĄTY SP. Z O.O. Wszelkie prawa zastrzeżone.</span>
+      <span>Obsługa: Gdańsk • Gdynia • Sopot • Trójmiasto i okolice</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating phone -->
+<a href="tel:+48607281463" class="float-phone" aria-label="Zadzwoń">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<script>
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Nav scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+});
+
+// Mobile menu
+const toggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// Slogan rotator
+const items = document.querySelectorAll('.rotator-item');
+let current = 0;
+setInterval(() => {
+  items[current].classList.remove('active');
+  items[current].classList.add('exit');
+  setTimeout(() => items[current].classList.remove('exit'), 700);
+  current = (current + 1) % items.length;
+  items[current].classList.add('active');
+}, 3500);
+
+// Reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Contact form
+const form = document.getElementById('contactForm');
+const success = document.getElementById('formSuccess');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  success.classList.add('show');
+  form.reset();
+  setTimeout(() => success.classList.remove('show'), 6000);
+});
+</script>
+
+</body>
+</html>
